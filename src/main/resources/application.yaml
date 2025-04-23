@@ -1,0 +1,18 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: manage
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mis?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 3271149877mm
+
+  jackson:
+    default-property-inclusion: non_null # JSON处理时忽略非空字段
+mybatis-plus:
+  type-aliases-package: com.manage.entity # 别名扫描包
+logging:
+  level:
+    com.manage: debug
